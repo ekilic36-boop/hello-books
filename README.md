@@ -1,82 +1,74 @@
-# BookDB
+# 📚 BookDB
 
-BookDB, React ve JSON Server ile gelistirilmis basit bir kitap yonetim uygulamasidir. Kitaplari listeleyebilir, detaylarini gorebilir, yeni kitap ekleyebilir, mevcut kitaplari guncelleyebilir ve silebilirsiniz.
+BookDB, React ve JSON Server ile gelistirilmis modern bir kitap yonetim uygulamasidir. Kitaplari listeleyebilir, arayabilir, detaylarini inceleyebilir, yeni kitap ekleyebilir, mevcut kitaplari guncelleyebilir ve silebilirsiniz.
 
-## Ozellikler
+## ✨ Ozellikler
 
-- Kitap listeleme
-- Kitap detay sayfasi
-- Kitap ekleme
-- Kitap guncelleme
-- Kitap silme onayi
-- Kitap arama (`?search=...`)
-- Yazar ve kapak gorseli alanlari
-- Loading ve error durumlari
-- 404 sayfasi
-- Detay sayfasinda onceki / sonraki kitap gecisi
-- Silme sayfasinda 3 saniyelik geri sayim
+- 📖 Kitap listeleme
+- 🔎 URL parametresi ile arama (`?search=...`)
+- 🧾 Kitap detay sayfasi
+- ➕ Yeni kitap ekleme
+- ✏️ Kitap guncelleme
+- 🗑️ Silme onay sayfasi
+- ⏳ Silme onayinda 3 saniyelik geri sayim
+- 🖼️ Kapak gorseli destegi
+- 👤 Yazar bilgisi
+- ⬅️➡️ Detay sayfasinda onceki / sonraki kitap gecisi
+- ⚠️ Loading ve error durumlari
+- 🚫 404 sayfasi
 
-## Kullanilan Teknolojiler
+## 🛠️ Kullanilan Teknolojiler
 
-- React 19
-- TypeScript
-- Vite
-- React Router v7
-- Tailwind CSS
-- DaisyUI
-- Axios
-- JSON Server
-- Concurrently
+| Teknoloji | Aciklama |
+| --- | --- |
+| React 19 | Arayuz gelistirme |
+| TypeScript | Tip guvenligi |
+| Vite | Gelistirme ve build araci |
+| React Router v7 | Sayfa yonlendirme |
+| Tailwind CSS | Utility-first CSS |
+| DaisyUI | Hazir UI component stilleri |
+| Axios | API istekleri |
+| JSON Server | Fake REST API |
+| Concurrently | Vite ve JSON Server'i beraber calistirma |
 
-## Kurulum
+## 🚀 Kurulum
 
-Projeyi indirdikten sonra bagimliliklari yukleyin:
+Projeyi bilgisayariniza aldiktan sonra bagimliliklari yukleyin:
 
 ```bash
 npm install
 ```
 
-## Calistirma
+## ▶️ Calistirma
 
-Vite ve JSON Server tek komutla beraber calisir:
+Vite ve JSON Server tek komutla beraber baslar:
 
 ```bash
 npm run dev
 ```
 
-Uygulama:
+Uygulama adresi:
 
 ```text
 http://localhost:5173
 ```
 
-API:
+API adresi:
 
 ```text
 http://localhost:3000/books
 ```
 
-## Komutlar
+## 📜 Komutlar
 
-```bash
-npm run dev
-```
+| Komut | Gorev |
+| --- | --- |
+| `npm run dev` | Gelistirme sunucusunu ve JSON Server'i baslatir |
+| `npm run build` | TypeScript kontrolu yapar ve production build olusturur |
+| `npm run lint` | ESLint kontrolunu calistirir |
+| `npm run preview` | Build sonrasi on izleme sunucusu acar |
 
-Gelistirme sunucusunu ve JSON Server'i beraber baslatir.
-
-```bash
-npm run build
-```
-
-TypeScript kontrolu yapar ve production build olusturur.
-
-```bash
-npm run lint
-```
-
-ESLint kontrolunu calistirir.
-
-## Proje Yapisi
+## 🗂️ Proje Yapisi
 
 ```text
 src/
@@ -100,9 +92,9 @@ src/
     MyRouter.tsx
 ```
 
-## Veri Modeli
+## 🧩 Veri Modeli
 
-Kitaplar `db.json` dosyasinda tutulur:
+Kitap verileri `db.json` dosyasinda tutulur.
 
 ```json
 {
@@ -114,8 +106,27 @@ Kitaplar `db.json` dosyasinda tutulur:
 }
 ```
 
-## Notlar
+## 🧭 Sayfalar
 
-- Projede `react-router-dom` kullanilmamistir, sadece `react-router` kullanilir.
+| Route | Sayfa |
+| --- | --- |
+| `/` | Hos geldin sayfasi |
+| `/books` | Kitap listesi |
+| `/books?search=1984` | Arama sonucuyla kitap listesi |
+| `/books/add` | Kitap ekleme |
+| `/books/:id` | Kitap detayi |
+| `/books/:id/edit` | Kitap guncelleme |
+| `/books/:id/delete` | Kitap silme onayi |
+| `*` | 404 sayfasi |
+
+## ✅ Notlar
+
+- `react-router-dom` kullanilmamistir, sadece `react-router` kullanilir.
 - Sayfa gecisleri icin `<Link to="...">` kullanilir.
+- `npm run dev` komutu Vite ve JSON Server'i birlikte calistirir.
 - `node_modules` ve `dist` klasorleri GitHub'a yuklenmez.
+
+## 👨‍💻 Gelistirici
+
+Bu proje, React Router, API islemleri ve temel CRUD yapisini pekistirmek icin hazirlanmistir.
+
