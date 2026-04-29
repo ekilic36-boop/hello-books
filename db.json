@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Suç ve Ceza",
+      "year": "1866",
+      "author": "Fyodor Dostoyevski",
+      "image": "https://www.turkedebiyati.org/wp-content/uploads/2023/03/suc-ve-ceza-dostoyevski.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Sapiens",
+      "year": "2011",
+      "author": "Yuval Noah Harari",
+      "image": "https://img.fusedlearning.com/img/humanities/149/book-review-sapiens.jpg"
+    },
+    {
+      "title": "1984",
+      "year": "1949",
+      "id": "3",
+      "author": "George Orwell",
+      "image": "https://www.bookerworm.com/images/1984.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Sefiller",
+      "year": "1862",
+      "author": "Victor Hugo",
+      "image": "https://francetoday.com/wp-content/uploads/2022/03/51JEItnoKFL.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Beyaz Geceler",
+      "year": "1848",
+      "author": "Fyodor Dostoyevski",
+      "image": "https://www.panamayayincilik.com/images/urunler/Beyaz-Geceler-resim-283.jpg"
+    }
+  ]
+}

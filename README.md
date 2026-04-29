@@ -1,5 +1,4 @@
-# hello-books
- BookDB
+# BookDB
 
 BookDB, React ve JSON Server ile gelistirilmis basit bir kitap yonetim uygulamasidir. Kitaplari listeleyebilir, detaylarini gorebilir, yeni kitap ekleyebilir, mevcut kitaplari guncelleyebilir ve silebilirsiniz.
 
